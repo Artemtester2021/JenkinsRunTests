@@ -1,3 +1,5 @@
+package tests;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import helpers.Attach;
@@ -17,7 +19,8 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
-public class PracticFormTest {@BeforeAll
+public class PracticFormTest {
+    @BeforeAll
 static void beforeAll() {
     Configuration.baseUrl = "https://demoqa.com";
     Configuration.browserSize = "1920x1080";
@@ -45,7 +48,7 @@ static void beforeAll() {
     }
 
     @Test
-    @Tag("demoqa")
+    @Tag("simple")
     void fillFormTest() {
         step("Открытие формы", () -> {
             open("/automation-practice-form");
