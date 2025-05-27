@@ -48,7 +48,7 @@ static void beforeAll() {
     }
 
     @Test
-    @Tag("simple")
+    @Tag("demoqa")
     void fillFormTest() {
         step("Открытие формы", () -> {
             open("/automation-practice-form");
